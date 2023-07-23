@@ -1,0 +1,15 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+
+# This function displays the splits of the tree
+from sklearn.tree import plot_tree
+
+from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix
+from sklearn.metrics import recall_score, precision_score, f1_score, accuracy_score
+
+#import data
+df_original = pd.read_csv("Invistico_Airline.csv")
